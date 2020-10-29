@@ -8,9 +8,9 @@
 
 ## 과정
 1. <a href='data_preprocessing_revision.html'>Data preprocessing</a>
-2. 
+2. <a href='lat_long_usingKaKaoAPI.html'>Getting latitude, longitude data using Kakao API</a>
 3. <a href='Map_visualization_revision.html'>Map visualization</a>
 
 ## 결과html
-1. <a href='Seoul_Map.html'>Seoul_Map.html</a>
-2. <a href='Seoul_Map_MarkerCluster.html'>Seoul_Map_MarkerCluster.html</a>
+* <a href='Seoul_Map.html'>Seoul_Map.html</a>
+* <a href='Seoul_Map_MarkerCluster.html'>Seoul_Map_MarkerCluster.html</a>
