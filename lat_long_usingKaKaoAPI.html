@@ -13092,14 +13092,14 @@ div#notebook {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-<span class="n">df</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;서울시기관_.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;CP949&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;서울시기관_2020-10-29.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;CP949&#39;</span><span class="p">)</span>
 <span class="n">latitude</span><span class="o">=</span><span class="p">[]</span>
 <span class="n">longitude</span><span class="o">=</span><span class="p">[]</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Location_Regex&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">:</span>
     <span class="n">url</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;https://dapi.kakao.com/v2/local/search/keyword.json?query=</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span>
     <span class="n">headers</span><span class="o">=</span> <span class="p">{</span>
-        <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;KakaoAK API키&quot;</span>
+        <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;KakaoAK 7f5e1d0f822214e1bb89a28082f947eb&quot;</span>
         <span class="p">}</span>
     <span class="n">places</span><span class="o">=</span><span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span> <span class="n">headers</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 
@@ -13222,35 +13222,35 @@ div#notebook {
       <td>...</td>
     </tr>
     <tr>
-      <th>83</th>
+      <th>85</th>
       <td>서울특별시 영등포구 여의동로 330</td>
       <td>여의도안내센터</td>
       <td>37.526347</td>
       <td>126.933598</td>
     </tr>
     <tr>
-      <th>84</th>
+      <th>86</th>
       <td>서울특별시 용산구 이촌로72길 62</td>
       <td>이촌안내센터</td>
       <td>37.517240</td>
       <td>126.970527</td>
     </tr>
     <tr>
-      <th>85</th>
+      <th>87</th>
       <td>서울특별시 송파구 한가람로 65</td>
       <td>잠실안내센터</td>
-      <td>37.517964</td>
-      <td>127.078327</td>
+      <td>37.517627</td>
+      <td>127.086738</td>
     </tr>
     <tr>
-      <th>86</th>
+      <th>88</th>
       <td>서울특별시 서초구 잠원로 221-124</td>
       <td>잠원안내센터</td>
       <td>37.520721</td>
       <td>127.012294</td>
     </tr>
     <tr>
-      <th>87</th>
+      <th>89</th>
       <td>서울특별시 송파구 위례성대로 71</td>
       <td>한성백제박물관</td>
       <td>37.515413</td>
@@ -13258,7 +13258,7 @@ div#notebook {
     </tr>
   </tbody>
 </table>
-<p>88 rows × 4 columns</p>
+<p>90 rows × 4 columns</p>
 </div>
 </div>
 
@@ -13331,42 +13331,42 @@ div#notebook {
       <td>0.0</td>
     </tr>
     <tr>
-      <th>28</th>
+      <th>30</th>
       <td>경기도 남양주시 삼패동 397</td>
       <td>강북아리수정수센터</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
     <tr>
-      <th>30</th>
+      <th>32</th>
       <td>경기도 하남시 광암동 174</td>
       <td>광암아리수정수센터</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
     <tr>
-      <th>39</th>
+      <th>41</th>
       <td>서울특별시 강동구 아리수로 131</td>
       <td>암사아리수정수센터</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
     <tr>
-      <th>40</th>
+      <th>42</th>
       <td>서울특별시 영등포구 노들로 11</td>
       <td>영등포아리수정수센터</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
     <tr>
-      <th>70</th>
+      <th>72</th>
       <td>서울특별시 성동구 가람길 150</td>
       <td>차량정비센터</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
     <tr>
-      <th>77</th>
+      <th>79</th>
       <td>서울특별시 강동구 선사로 83-106</td>
       <td>광나루안내센터</td>
       <td>0.0</td>
@@ -13388,8 +13388,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">14</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span> <span class="mf">37.5192995</span>
-<span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">14</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span> <span class="mf">126.9196291</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">14</span><span class="p">,</span><span class="s1">&#39;Latitude&#39;</span><span class="p">]</span><span class="o">=</span> <span class="mf">37.5193098</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">14</span><span class="p">,</span><span class="s1">&#39;Longitude&#39;</span><span class="p">]</span><span class="o">=</span> <span class="mf">126.9209375</span>
 </pre></div>
 
     </div>
@@ -13402,8 +13402,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">28</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span> <span class="mf">37.5957411</span>
-<span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">28</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span> <span class="mf">127.1840014</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">30</span><span class="p">,</span><span class="s1">&#39;Latitude&#39;</span><span class="p">]</span><span class="o">=</span> <span class="mf">37.5957411</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">30</span><span class="p">,</span><span class="s1">&#39;Longitude&#39;</span><span class="p">]</span><span class="o">=</span> <span class="mf">127.1839961</span>
 </pre></div>
 
     </div>
@@ -13416,8 +13416,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">30</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span> <span class="mf">37.5198202</span>
-<span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">30</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span> <span class="mf">127.1704981</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">32</span><span class="p">,</span><span class="s1">&#39;Latitude&#39;</span><span class="p">]</span><span class="o">=</span> <span class="mf">37.5198202</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">32</span><span class="p">,</span><span class="s1">&#39;Longitude&#39;</span><span class="p">]</span><span class="o">=</span> <span class="mf">127.1704928</span>
 </pre></div>
 
     </div>
@@ -13430,8 +13430,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">39</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span> <span class="mf">37.5634231</span>
-<span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">39</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span> <span class="mf">127.1392098</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">41</span><span class="p">,</span><span class="s1">&#39;Latitude&#39;</span><span class="p">]</span><span class="o">=</span> <span class="mf">37.5634231</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">41</span><span class="p">,</span><span class="s1">&#39;Longitude&#39;</span><span class="p">]</span><span class="o">=</span> <span class="mf">127.1392045</span>
 </pre></div>
 
     </div>
@@ -13444,8 +13444,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">40</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span> <span class="mf">37.550148</span>
-<span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">40</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span> <span class="mf">126.8788343</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">42</span><span class="p">,</span><span class="s1">&#39;Latitude&#39;</span><span class="p">]</span><span class="o">=</span> <span class="mf">37.550148</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">42</span><span class="p">,</span><span class="s1">&#39;Longitude&#39;</span><span class="p">]</span><span class="o">=</span> <span class="mf">126.878829</span>
 </pre></div>
 
     </div>
@@ -13458,9 +13458,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">70</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span> <span class="s1">&#39;서울특별시 성동구 가람길 117&#39;</span>
-<span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">70</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span> <span class="mf">37.5526775</span> 
-<span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">70</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span> <span class="mf">127.0540148</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">72</span><span class="p">,</span><span class="s1">&#39;Location_Regex&#39;</span><span class="p">]</span><span class="o">=</span> <span class="s1">&#39;서울특별시 성동구 가람길 117&#39;</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">72</span><span class="p">,</span><span class="s1">&#39;Latitude&#39;</span><span class="p">]</span><span class="o">=</span> <span class="mf">37.5526775</span> 
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">72</span><span class="p">,</span><span class="s1">&#39;Longitude&#39;</span><span class="p">]</span><span class="o">=</span> <span class="mf">127.0540148</span>
 </pre></div>
 
     </div>
@@ -13473,8 +13473,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">77</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span> <span class="mf">37.5499323</span>
-<span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">77</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span> <span class="mf">127.1200463</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">79</span><span class="p">,</span><span class="s1">&#39;Latitude&#39;</span><span class="p">]</span><span class="o">=</span> <span class="mf">37.5501801</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">79</span><span class="p">,</span><span class="s1">&#39;Longitude&#39;</span><span class="p">]</span><span class="o">=</span> <span class="mf">127.1210134</span>
 </pre></div>
 
     </div>
@@ -13573,35 +13573,35 @@ div#notebook {
       <td>...</td>
     </tr>
     <tr>
-      <th>83</th>
+      <th>85</th>
       <td>서울특별시 영등포구 여의동로 330</td>
       <td>여의도안내센터</td>
       <td>37.526347</td>
       <td>126.933598</td>
     </tr>
     <tr>
-      <th>84</th>
+      <th>86</th>
       <td>서울특별시 용산구 이촌로72길 62</td>
       <td>이촌안내센터</td>
       <td>37.517240</td>
       <td>126.970527</td>
     </tr>
     <tr>
-      <th>85</th>
+      <th>87</th>
       <td>서울특별시 송파구 한가람로 65</td>
       <td>잠실안내센터</td>
-      <td>37.517964</td>
-      <td>127.078327</td>
+      <td>37.517627</td>
+      <td>127.086738</td>
     </tr>
     <tr>
-      <th>86</th>
+      <th>88</th>
       <td>서울특별시 서초구 잠원로 221-124</td>
       <td>잠원안내센터</td>
       <td>37.520721</td>
       <td>127.012294</td>
     </tr>
     <tr>
-      <th>87</th>
+      <th>89</th>
       <td>서울특별시 송파구 위례성대로 71</td>
       <td>한성백제박물관</td>
       <td>37.515413</td>
@@ -13609,7 +13609,7 @@ div#notebook {
     </tr>
   </tbody>
 </table>
-<p>88 rows × 4 columns</p>
+<p>90 rows × 4 columns</p>
 </div>
 </div>
 
@@ -13650,12 +13650,12 @@ div#notebook {
 3     38.204357
 4     37.465705
         ...    
-83    37.526347
-84    37.517240
-85    37.517964
-86    37.520721
-87    37.515413
-Name: Latitude, Length: 88, dtype: float64</pre>
+85    37.526347
+86    37.517240
+87    37.517627
+88    37.520721
+89    37.515413
+Name: Latitude, Length: 90, dtype: float64</pre>
 </div>
 
 </div>
@@ -13708,12 +13708,12 @@ Name: Latitude, Length: 88, dtype: float64</pre>
 3    38.204357404291301
 4    37.465704819344502
             ...        
-83   37.526347204736901
-84   37.517240442107202
-85   37.517964179198401
-86   37.520721352016203
-87   37.515412678518203
-Name: Latitude, Length: 88, dtype: float64</pre>
+85   37.526347204736901
+86   37.517240442107202
+87   37.517626732848299
+88   37.520721352016203
+89   37.515412678518203
+Name: Latitude, Length: 90, dtype: float64</pre>
 </div>
 
 </div>
@@ -13752,12 +13752,12 @@ Name: Latitude, Length: 88, dtype: float64</pre>
 3    128.553228592544002
 4    127.089788289504995
              ...        
-83   126.933597581409003
-84   126.970526590860999
-85   127.078326539388001
-86   127.012293978105006
-87   127.120895017164997
-Name: Longitude, Length: 88, dtype: float64</pre>
+85   126.933597581409003
+86   126.970526590860999
+87   127.086737506272001
+88   127.012293978105006
+89   127.120895017164997
+Name: Longitude, Length: 90, dtype: float64</pre>
 </div>
 
 </div>
@@ -13771,7 +13771,7 @@ Name: Longitude, Length: 88, dtype: float64</pre>
 <div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;서울시기관_kakaomap.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;CP949&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;서울시기관_kakaomap.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;CP949&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 
     </div>
