@@ -13099,7 +13099,7 @@ div#notebook {
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Location_Regex&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">:</span>
     <span class="n">url</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;https://dapi.kakao.com/v2/local/search/keyword.json?query=</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span>
     <span class="n">headers</span><span class="o">=</span> <span class="p">{</span>
-        <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;KakaoAK 7f5e1d0f822214e1bb89a28082f947eb&quot;</span>
+        <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;KakaoAK API&quot;</span>
         <span class="p">}</span>
     <span class="n">places</span><span class="o">=</span><span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span> <span class="n">headers</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 
